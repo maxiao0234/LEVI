@@ -2,7 +2,9 @@
 
 Static project website for LEVI: paper overview, leaderboard and model comparisons.
 
-Project address: `https://maxiao0234.github.io/LEVI/`. Deployment is not enabled.
+Project website: [maxiao0234.github.io/LEVI](https://maxiao0234.github.io/LEVI/). GitHub Pages serves `main/docs`.
+
+Hugging Face downloads are coming soon.
 
 Preview from the repository root:
 

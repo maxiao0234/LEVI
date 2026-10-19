@@ -81,7 +81,7 @@ Whole-task pass rates on the retained challenge set are shown below. Rates use t
 | 9 | MAI Image 2.5 | 23.49 |
 | 10 | FLUX.2 Max | 15.27 |
 
-The strongest configuration still fails to satisfy all requirements on more than two fifths of the tasks. The [project website source](docs/) contains domain scores and selected comparisons. Detailed evaluation records are not bundled in this release; `results/` is reserved for a future release.
+The strongest configuration still fails to satisfy all requirements on more than two fifths of the tasks. The [project website](https://maxiao0234.github.io/LEVI/) contains domain scores and selected comparisons. Detailed evaluation records are not bundled in this release; `results/` is reserved for a future release.
 
 ## Repository layout
 
