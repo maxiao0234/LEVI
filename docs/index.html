@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="LEVI: a benchmark for visual identity fidelity. 1,375 text-to-image tasks, 120 base visual identity spaces, six domains, and ten evaluated model configurations.">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="LEVI: Benchmarking Visual Identity Fidelity">
+<meta property="og:description" content="Explore visual identity requirements, model comparisons and benchmark results.">
+<title>LEVI — Benchmarking Visual Identity Fidelity</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#overview">Skip to content</a>
+<nav class="site-nav" aria-label="Page navigation"><div class="nav-inner"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">▦</span> LEVI</a><div class="nav-links"><a href="#overview">Overview</a><a href="#results">Results</a><a href="#examples">Examples</a><a href="#citation">Citation</a></div></div></nav>
+<main id="top">
+<header class="paper-header container">
+<h1><span class="title-name">LEVI</span>: Benchmarking Visual Identity Fidelity<br class="desktop-break"> <span class="title-second">with Verifiable Low-Entropy Constructs</span></h1>
+<div class="authors"><a href="mailto:mx@molardata.com">Xiao Ma<sup>1</sup></a><a href="mailto:z.zhan@imperial.ac.uk">Zhonghao Zhan<sup>2</sup></a><a href="mailto:h.haddadi@imperial.ac.uk">Hamed Haddadi<sup>2</sup></a><a href="mailto:chenqi@molardata.com">Qi Chen<sup>1</sup></a></div>
+<p class="affiliations"><span><sup>1</sup> ZODA</span><span><sup>2</sup> Imperial College London</span></p>
+<div class="resource-links" aria-label="Project resources">
+<a class="resource-badge" href="assets/levi-paper.pdf" target="_blank" rel="noopener"><img src="assets/links/paper.svg" alt="Paper PDF" height="20"></a>
+<a class="resource-badge" href="https://github.com/maxiao0234/LEVI/tree/main/benchmark" target="_blank" rel="noopener"><img src="assets/links/dataset.svg" alt="Dataset" height="20"></a>
+<a class="resource-badge" href="https://github.com/maxiao0234/LEVI" target="_blank" rel="noopener"><img src="assets/links/evaluation.svg" alt="Code on GitHub" height="20"></a>
+<a class="resource-badge" href="#results"><img src="assets/links/results.svg" alt="Results" height="20"></a>
+</div>
+</header>
+<section id="overview" class="overview container" aria-labelledby="overview-title">
+<h2 id="overview-title" class="teaser-heading">A precise failure inside plausible images.</h2>
+<figure class="paper-figure teaser"><button class="image-button" data-zoom="assets/identity-overview.webp" data-caption="Six identity domains. Conceptual illustrations from Figure 1 of the paper." aria-label="Enlarge the six-domain overview"><img src="assets/identity-overview.webp" alt="Six identity domains illustrated by correct and incorrect words, geometry, linked rings, piano-key layouts, card counts and drawing stages." width="2400" height="1172" fetchpriority="high"><span class="expand-hint" aria-hidden="true">↗ Enlarge</span></button><figcaption>LEVI evaluates the facts that determine visual identity while allowing variation in appearance.<br>Conceptual illustrations from the paper; actual model outputs appear below.</figcaption></figure>
+<div class="benchmark-stats" aria-label="Benchmark at a glance"><div><strong>1,375</strong><span>curated tasks</span></div><div><strong>120</strong><span>base visual identity spaces</span></div><div><strong>6</strong><span>identity domains</span></div><div><strong>10</strong><span>model configurations</span></div></div>
+</section>
+<section class="abstract-section" aria-labelledby="abstract-title"><div class="reading-width"><h2 id="abstract-title">Abstract</h2>
+<p>Modern generative models can produce visually plausible images while violating exact identity constraints. Evaluating such failures requires distinguishing violations of the requested identity from permissible variation in appearance. We introduce <strong>Low-Entropy Visual Identity (LEVI)</strong>, which characterizes visual identities determined by compact facts and explicit rules.</p>
+<p><strong>Visual Identity Spaces (VIS)</strong> specify admissible identity values and which different realizations express the same identity. <strong>Verifiable Visual Grammar (VVG)</strong> describes identity-bearing structures through typed primitives and compositional constraints. Together, they support a benchmark that evaluates each generated image against the identity requirements in its text prompt.</p>
+<p>The curated benchmark contains <strong>1,375 tasks spanning 120 base visual identity spaces across six domains</strong>. Among ten evaluated model configurations, the highest whole-task pass rate is <strong>58.69%</strong>, revealing a persistent gap between visually plausible images and faithful realization of their specified identities.</p>
+</div></section>
+<section id="results" class="section results-section" aria-labelledby="results-title"><div class="container">
+<div class="section-heading"><h2 id="results-title">Results</h2><p>The strongest evaluated configuration passes <strong>58.69%</strong> of complete tasks.</p></div>
+<div class="table-toolbar"><span>Whole-task pass rate (%) ↑</span><span>Click a column to sort</span></div>
+<div class="table-scroll" role="region" tabindex="0" aria-label="Benchmark results table, scroll horizontally on small screens"><table id="results-table"><caption class="sr-only">Results for ten configurations on the fixed 1,375-task challenge set.</caption><thead><tr><th scope="col" class="rank-column">Rank</th><th scope="col">Model configuration</th><th scope="col" aria-sort="descending"><button data-sort="0">Overall <span aria-hidden="true">↓</span></button></th><th scope="col"><button data-sort="1">Symbolic <span aria-hidden="true">↕</span></button></th><th scope="col"><button data-sort="2">Geometric <span aria-hidden="true">↕</span></button></th><th scope="col"><button data-sort="3">Topological <span aria-hidden="true">↕</span></button></th><th scope="col"><button data-sort="4">Layout <span aria-hidden="true">↕</span></button></th><th scope="col"><button data-sort="5">Quantitative <span aria-hidden="true">↕</span></button></th><th scope="col"><button data-sort="6">Procedural <span aria-hidden="true">↕</span></button></th></tr></thead><tbody id="results-body"></tbody></table></div>
+<div class="results-notes"><p id="result-status" role="status">Loading the paper’s reported results…</p><a href="results.json" download="levi-results.json">Download results JSON <span aria-hidden="true">↓</span></a></div>
+<p class="protocol-note">Results from the paper’s retained challenge set, curated after generation. A whole-task PASS requires all recorded conditions to pass. Domain columns are task-weighted and their task subsets overlap. Generation failures receive zero credit. These are recorded automatic outcomes.</p>
+<div class="result-takeaway"><div><strong>243 / 1,375</strong><span>tasks passed by none of the ten configurations</span></div><p>Success sets also differ across models. Flare passes <strong>155 tasks</strong> that Sunburst does not, despite its lower overall score. Aggregate ranking does not imply that one model’s successes contain another’s.</p></div>
+</div></section>
+<section id="examples" class="section container" aria-labelledby="examples-title">
+<div class="section-heading"><h2 id="examples-title">Explore the benchmark</h2><p>Choose a domain and a task. Compare each model against the same requirement.</p></div>
+<div class="examples-workspace">
+<div id="domain-tabs" class="domain-tabs" role="tablist" aria-label="Identity domain"></div>
+<div id="case-picker" class="case-picker" role="group" aria-label="Choose a task"></div>
+<div id="example-panel" role="tabpanel" tabindex="0">
+<div class="case-heading"><div><p id="case-domain" class="case-domain"></p><h3 id="case-title"></h3></div><div class="case-navigation"><span id="case-progress"></span><button id="previous-case" type="button" aria-label="Previous example">←</button><button id="next-case" type="button" aria-label="Next example">→</button></div></div>
+<p id="case-requirement" class="case-summary"></p>
+<div class="case-target"><h4>What to check</h4><p id="case-evidence"></p><details class="full-prompt"><summary>Read the full text prompt</summary><p id="case-prompt"></p></details></div>
+<div id="model-grid" class="model-grid"></div>
+<p class="figure-note">Click any image to enlarge. PASS/FAIL reproduce the stored automatic outcomes. The schematic illustrates the requested identity and was not supplied to the generators.</p>
+<div class="case-analysis"><h4>Model comparison</h4><p id="case-analysis"></p></div>
+</div>
+</div>
+<p id="example-status" class="sr-only" role="status"></p>
+<noscript><p>Enable JavaScript to explore the comparisons. Browse the <a href="examples.json">example descriptions</a> or the <a href="assets/levi-paper.pdf">paper PDF</a>.</p></noscript>
+</section>
+
+<section id="citation" class="section citation-section"><div class="reading-width"><h2>Citation</h2><p class="citation-placeholder">Citation information will be added here.</p></div></section>
+</main>
+<footer><div class="container footer-inner"><p><strong>LEVI</strong> · Low-Entropy Visual Identity</p><a href="mailto:mx@molardata.com">Contact</a><p class="template-credit">Layout inspired by <a href="https://nerfies.github.io/">Nerfies</a>.</p></div></footer>
+<dialog id="image-dialog" aria-labelledby="image-caption"><div class="dialog-toolbar"><p id="image-caption"></p><button id="close-dialog" aria-label="Close image">×</button></div><div class="dialog-image-wrap"><img id="dialog-image" alt=""></div></dialog>
+</body>
+</html>

@@ -1,0 +1,722 @@
+[
+  {
+    "bvis_id": "BVIS-001",
+    "name": "Latin letter glyph identity",
+    "domain": "Symbolic",
+    "predicate": "The visible foreground belongs to a member of the fixed Latin-letter codebook."
+  },
+  {
+    "bvis_id": "BVIS-002",
+    "name": "Ordered string identity",
+    "domain": "Symbolic",
+    "predicate": "The characters at each position and their order match the target token string."
+  },
+  {
+    "bvis_id": "BVIS-003",
+    "name": "Digit string identity",
+    "domain": "Symbolic",
+    "predicate": "The visible digits at successive positions form the fixed short string."
+  },
+  {
+    "bvis_id": "BVIS-004",
+    "name": "Punctuation token sequence",
+    "domain": "Symbolic",
+    "predicate": "Punctuation types, counts and positions between characters match the target."
+  },
+  {
+    "bvis_id": "BVIS-005",
+    "name": "Icon codebook membership",
+    "domain": "Symbolic",
+    "predicate": "The complete icon belongs to a member of the fixed icon codebook."
+  },
+  {
+    "bvis_id": "BVIS-006",
+    "name": "Arrowhead and tail identity",
+    "domain": "Symbolic",
+    "predicate": "The arrow has the specified head type, tail type and symbolic direction."
+  },
+  {
+    "bvis_id": "BVIS-007",
+    "name": "Symbol foreground and negative-space polarity",
+    "domain": "Symbolic",
+    "predicate": "The strokes of the specified symbol are realized by foreground or negative space as required; this concerns the realization of symbolic identity only."
+  },
+  {
+    "bvis_id": "BVIS-008",
+    "name": "Multiple-reading symbol identity",
+    "domain": "Symbolic",
+    "predicate": "The same symbol decodes to the specified pair of tokens under the declared reading orientations."
+  },
+  {
+    "bvis_id": "BVIS-009",
+    "name": "Musical note symbol identity",
+    "domain": "Symbolic",
+    "predicate": "The notehead, stem and other components form the fixed musical note symbol."
+  },
+  {
+    "bvis_id": "BVIS-010",
+    "name": "Three-arrow recycling symbol identity",
+    "domain": "Symbolic",
+    "predicate": "Three arrow components jointly form the fixed recycling symbol."
+  },
+  {
+    "bvis_id": "BVIS-011",
+    "name": "Emblem and logo codebook membership",
+    "domain": "Symbolic",
+    "predicate": "The complete component combination belongs to the fixed emblem or logo codebook."
+  },
+  {
+    "bvis_id": "BVIS-012",
+    "name": "Discrete color codebook identity",
+    "domain": "Symbolic",
+    "predicate": "Identity-bearing colors match the specified discrete codebook members."
+  },
+  {
+    "bvis_id": "BVIS-013",
+    "name": "Shape-sequence codebook identity",
+    "domain": "Symbolic",
+    "predicate": "The ordered group of shapes, considered as a whole, matches the specified symbol codebook."
+  },
+  {
+    "bvis_id": "BVIS-014",
+    "name": "Color-band and topmark codebook identity",
+    "domain": "Symbolic",
+    "predicate": "The color bands and topmark jointly match the specified composite symbol."
+  },
+  {
+    "bvis_id": "BVIS-015",
+    "name": "Component-based status badge identity",
+    "domain": "Symbolic",
+    "predicate": "The specified components jointly form the declared status badge."
+  },
+  {
+    "bvis_id": "BVIS-016",
+    "name": "Framed-mark codebook identity",
+    "domain": "Symbolic",
+    "predicate": "The frame and its internal marks jointly match the specified composite symbol."
+  },
+  {
+    "bvis_id": "BVIS-017",
+    "name": "Circular stamp and cancellation-line identity",
+    "domain": "Symbolic",
+    "predicate": "The circular stamp and registered line group jointly form the specified composite mark."
+  },
+  {
+    "bvis_id": "BVIS-018",
+    "name": "Open orthogonal path direction sequence",
+    "domain": "Geometric",
+    "predicate": "The sequence of horizontal and vertical segment directions along the open path matches the target."
+  },
+  {
+    "bvis_id": "BVIS-019",
+    "name": "Orthogonal boundary turns and length order",
+    "domain": "Geometric",
+    "predicate": "Turns and relative lengths along the complete boundary match the specified geometric identity."
+  },
+  {
+    "bvis_id": "BVIS-020",
+    "name": "Open curved path contour",
+    "domain": "Geometric",
+    "predicate": "The bending directions, control points and local curvature of a single open curve match the target."
+  },
+  {
+    "bvis_id": "BVIS-021",
+    "name": "Overall contour class",
+    "domain": "Geometric",
+    "predicate": "The complete outer contour belongs to the fixed shape class."
+  },
+  {
+    "bvis_id": "BVIS-022",
+    "name": "Reflected contour correspondence",
+    "domain": "Geometric",
+    "predicate": "The two actual contours are reflections of each other across the specified axis."
+  },
+  {
+    "bvis_id": "BVIS-023",
+    "name": "Half-turn contour correspondence",
+    "domain": "Geometric",
+    "predicate": "The two actual foreground masks coincide after a 180-degree rotation."
+  },
+  {
+    "bvis_id": "BVIS-024",
+    "name": "Object orientation identity",
+    "domain": "Geometric",
+    "predicate": "The object's principal axis or directional component points in the specified direction."
+  },
+  {
+    "bvis_id": "BVIS-025",
+    "name": "Relative length order",
+    "domain": "Geometric",
+    "predicate": "The visible lengths of the specified objects strictly follow the fixed order."
+  },
+  {
+    "bvis_id": "BVIS-026",
+    "name": "Relative width order",
+    "domain": "Geometric",
+    "predicate": "The visible widths of the specified objects follow the fixed order."
+  },
+  {
+    "bvis_id": "BVIS-027",
+    "name": "Visible height order",
+    "domain": "Geometric",
+    "predicate": "Visible heights measured along a common axis follow the specified order."
+  },
+  {
+    "bvis_id": "BVIS-028",
+    "name": "Aspect ratio identity",
+    "domain": "Geometric",
+    "predicate": "The dimensionless width-to-height ratio in the specified measurement plane lies within the fixed interval."
+  },
+  {
+    "bvis_id": "BVIS-029",
+    "name": "Four-corner radius vector",
+    "domain": "Geometric",
+    "predicate": "The ordered radii of the four rounded corners match the fixed vector."
+  },
+  {
+    "bvis_id": "BVIS-030",
+    "name": "Regular star vertices and phase",
+    "domain": "Geometric",
+    "predicate": "The closed star has the target numbers of outer points and inner valleys and the specified phase."
+  },
+  {
+    "bvis_id": "BVIS-031",
+    "name": "Polygonal hole-boundary contour",
+    "domain": "Geometric",
+    "predicate": "The number of sides, phase and contour of the located hole boundary satisfy the specified geometry."
+  },
+  {
+    "bvis_id": "BVIS-032",
+    "name": "Liquid-level and graduation alignment",
+    "domain": "Geometric",
+    "predicate": "The actual liquid-level feature point aligns with the specified graduation along the same measurement axis."
+  },
+  {
+    "bvis_id": "BVIS-033",
+    "name": "Pointer and graduation angular alignment",
+    "domain": "Geometric",
+    "predicate": "The actual pointer tip aligns with the ray of the specified graduation."
+  },
+  {
+    "bvis_id": "BVIS-034",
+    "name": "Shared-boundary geometry",
+    "domain": "Geometric",
+    "predicate": "The shape and turns of the actual shared boundary satisfy the geometric requirements."
+  },
+  {
+    "bvis_id": "BVIS-035",
+    "name": "Overlap-region geometry",
+    "domain": "Geometric",
+    "predicate": "The contour and geometric position of the actual foreground intersection satisfy the requirements."
+  },
+  {
+    "bvis_id": "BVIS-036",
+    "name": "Curvature event sequence",
+    "domain": "Geometric",
+    "predicate": "The sequence of straight segments, left bends, right bends or curvature extrema along the directed contour matches the target."
+  },
+  {
+    "bvis_id": "BVIS-037",
+    "name": "Multilayer pose registration",
+    "domain": "Geometric",
+    "predicate": "The relative translations, rotations and alignments of the actual layers satisfy the geometric requirements."
+  },
+  {
+    "bvis_id": "BVIS-038",
+    "name": "Projected path-crossing geometry",
+    "domain": "Geometric",
+    "predicate": "The crossing positions and geometric relationships of visible paths in image projection satisfy the requirements."
+  },
+  {
+    "bvis_id": "BVIS-039",
+    "name": "Visible contour after occlusion",
+    "domain": "Geometric",
+    "predicate": "Only the boundaries, directions and contours of actually visible foreground fragments are compared."
+  },
+  {
+    "bvis_id": "BVIS-040",
+    "name": "Common baseline and relative alignment",
+    "domain": "Geometric",
+    "predicate": "Actual feature points or edges satisfy the specified equal-height, collinearity or offset relationships in the declared measurement space."
+  },
+  {
+    "bvis_id": "BVIS-041",
+    "name": "Rigid rotation correspondence",
+    "domain": "Geometric",
+    "predicate": "wo actual contours or layouts have corresponding geometry under the specified rotation angle."
+  },
+  {
+    "bvis_id": "BVIS-042",
+    "name": "Connected-component count identity",
+    "domain": "Topological",
+    "predicate": "The number of connected components in the evaluated foreground matches the target."
+  },
+  {
+    "bvis_id": "BVIS-043",
+    "name": "Enclosed-hole structure",
+    "domain": "Topological",
+    "predicate": "The number and ownership of enclosed background components within the foreground match the target."
+  },
+  {
+    "bvis_id": "BVIS-044",
+    "name": "Visible connection graph",
+    "domain": "Topological",
+    "predicate": "Nodes and physical connections form the fixed directed or undirected graph."
+  },
+  {
+    "bvis_id": "BVIS-045",
+    "name": "Endpoint pairing graph",
+    "domain": "Topological",
+    "predicate": "Each visible endpoint is connected to exactly its target partner."
+  },
+  {
+    "bvis_id": "BVIS-046",
+    "name": "Free-end inventory",
+    "domain": "Topological",
+    "predicate": "The number of free ends of the path or network and their branch memberships match the target."
+  },
+  {
+    "bvis_id": "BVIS-047",
+    "name": "Branching and merging structure",
+    "domain": "Topological",
+    "predicate": "Paths branch or merge as specified at the fixed locations."
+  },
+  {
+    "bvis_id": "BVIS-048",
+    "name": "Open and closed path identity",
+    "domain": "Topological",
+    "predicate": "Path components are open chains or closed loops with the specified counts."
+  },
+  {
+    "bvis_id": "BVIS-049",
+    "name": "Actual path self-connection structure",
+    "domain": "Topological",
+    "predicate": "Actual self-connections of the path form the specified nodes and branches."
+  },
+  {
+    "bvis_id": "BVIS-050",
+    "name": "Physical crossing over-under signature",
+    "domain": "Topological",
+    "predicate": "The identity-bearing over-under relationships are preserved at corresponding crossings of the specified physical paths."
+  },
+  {
+    "bvis_id": "BVIS-051",
+    "name": "Closed-boundary nesting structure",
+    "domain": "Topological",
+    "predicate": "Closed regions form the target nesting tree under deformations that do not cross the specified boundaries."
+  },
+  {
+    "bvis_id": "BVIS-052",
+    "name": "Region adjacency graph",
+    "domain": "Topological",
+    "predicate": "Actual shared-wall adjacency between regions matches the target."
+  },
+  {
+    "bvis_id": "BVIS-053",
+    "name": "Boundary contact relationship",
+    "domain": "Topological",
+    "predicate": "The specified entities or regions actually touch, or do not touch, the target boundary as required."
+  },
+  {
+    "bvis_id": "BVIS-054",
+    "name": "Path-segment continuity",
+    "domain": "Topological",
+    "predicate": "All registered segments connect into the target number of continuous path components."
+  },
+  {
+    "bvis_id": "BVIS-055",
+    "name": "Port-to-terminal connectivity",
+    "domain": "Topological",
+    "predicate": "Each source port reaches its unique target terminal through one complete path."
+  },
+  {
+    "bvis_id": "BVIS-056",
+    "name": "Physical chain interlocking",
+    "domain": "Topological",
+    "predicate": "Adjacent rings, clasps or chain segments interlock in the specified manner."
+  },
+  {
+    "bvis_id": "BVIS-057",
+    "name": "Shared-boundary topology",
+    "domain": "Topological",
+    "predicate": "wo regions share, or do not share, a boundary segment of nonzero length as specified."
+  },
+  {
+    "bvis_id": "BVIS-058",
+    "name": "Physical partition component structure",
+    "domain": "Topological",
+    "predicate": "Partition walls divide the working surface into region components with the specified count and adjacency."
+  },
+  {
+    "bvis_id": "BVIS-059",
+    "name": "Node-degree multiset",
+    "domain": "Topological",
+    "predicate": "The degrees of all actual connection nodes form the target multiset."
+  },
+  {
+    "bvis_id": "BVIS-060",
+    "name": "Linear instance order",
+    "domain": "Layout",
+    "predicate": "The sequence of instance categories along the fixed axis matches the target."
+  },
+  {
+    "bvis_id": "BVIS-061",
+    "name": "Anchored circular order",
+    "domain": "Layout",
+    "predicate": "The circular sequence read from the unique physical anchor in the specified direction matches the target."
+  },
+  {
+    "bvis_id": "BVIS-062",
+    "name": "Two-dimensional slot occupancy",
+    "domain": "Layout",
+    "predicate": "The occupancy state of each slot in the finite grid matches the target."
+  },
+  {
+    "bvis_id": "BVIS-063",
+    "name": "Row and column membership",
+    "domain": "Layout",
+    "predicate": "Each instance belongs to the target row, column or row-column intersection."
+  },
+  {
+    "bvis_id": "BVIS-064",
+    "name": "Object-to-region assignment",
+    "domain": "Layout",
+    "predicate": "Components with distinct identities are placed in the specified spatial regions."
+  },
+  {
+    "bvis_id": "BVIS-065",
+    "name": "Object-to-slot assignment",
+    "domain": "Layout",
+    "predicate": "Typed objects occupy the target physical slots with no additional instances."
+  },
+  {
+    "bvis_id": "BVIS-066",
+    "name": "One-to-one instance pairing",
+    "domain": "Layout",
+    "predicate": "Two sets of instances form the fixed one-to-one correspondence."
+  },
+  {
+    "bvis_id": "BVIS-067",
+    "name": "Internal spatial roles of functional parts",
+    "domain": "Layout",
+    "predicate": "Visible components of the whole occupy their specified internal spatial roles and positions."
+  },
+  {
+    "bvis_id": "BVIS-068",
+    "name": "Group membership assignment",
+    "domain": "Layout",
+    "predicate": "Each node or object belongs only to its target group."
+  },
+  {
+    "bvis_id": "BVIS-069",
+    "name": "Physical occlusion layer order",
+    "domain": "Layout",
+    "predicate": "The front-to-back ordering of visible entities satisfies the specified relationships."
+  },
+  {
+    "bvis_id": "BVIS-070",
+    "name": "Cross-view component layout consistency",
+    "domain": "Layout",
+    "predicate": "The spatial roles of components maintain the specified correspondence across multiple visible faces or views of the same whole."
+  },
+  {
+    "bvis_id": "BVIS-071",
+    "name": "Color-to-position assignment",
+    "domain": "Layout",
+    "predicate": "Fixed color tokens are assigned to the target regions, circular positions or objects."
+  },
+  {
+    "bvis_id": "BVIS-072",
+    "name": "Attributed-object spatial assignment",
+    "domain": "Layout",
+    "predicate": "Objects with distinguishable identity attributes are assigned to specified spatial positions or regions."
+  },
+  {
+    "bvis_id": "BVIS-073",
+    "name": "Depth-slot assignment across physical frames",
+    "domain": "Layout",
+    "predicate": "Objects belong to the target layers, frames, boxes or front-to-back depth slots."
+  },
+  {
+    "bvis_id": "BVIS-074",
+    "name": "Support-surface and mounting-side assignment",
+    "domain": "Layout",
+    "predicate": "Specified parts are carried by the specified visible support surfaces or mounted on the specified sides."
+  },
+  {
+    "bvis_id": "BVIS-075",
+    "name": "Neighboring-instance relationship",
+    "domain": "Layout",
+    "predicate": "Specified objects are adjacent or separated as required along an ordered axis or within a physical layout."
+  },
+  {
+    "bvis_id": "BVIS-076",
+    "name": "Valid component tiling",
+    "domain": "Layout",
+    "predicate": "A finite set of parts with given shapes forms the specified valid tiling within the whole."
+  },
+  {
+    "bvis_id": "BVIS-077",
+    "name": "Object-to-container assignment",
+    "domain": "Layout",
+    "predicate": "Objects with distinct identities belong to the specified visible container instances."
+  },
+  {
+    "bvis_id": "BVIS-078",
+    "name": "Layout preservation across stages",
+    "domain": "Layout",
+    "predicate": "Component positions explicitly required to remain fixed share the same layout across the visible stages."
+  },
+  {
+    "bvis_id": "BVIS-079",
+    "name": "Local-part position within a whole",
+    "domain": "Layout",
+    "predicate": "An identity-bearing local component occupies the specified region or relative position within the whole."
+  },
+  {
+    "bvis_id": "BVIS-080",
+    "name": "Spatial channel assignment",
+    "domain": "Layout",
+    "predicate": "Visible objects or event markers occupy the specified spatial channels."
+  },
+  {
+    "bvis_id": "BVIS-081",
+    "name": "Spatial order of oriented units",
+    "domain": "Layout",
+    "predicate": "Repeated units with directional labels form the specified spatial sequence within the whole."
+  },
+  {
+    "bvis_id": "BVIS-082",
+    "name": "Total instance count",
+    "domain": "Quantitative",
+    "predicate": "The total number of visible instances within the specified scope matches the target."
+  },
+  {
+    "bvis_id": "BVIS-083",
+    "name": "Regional count vector",
+    "domain": "Quantitative",
+    "predicate": "Instance counts in ordered regions form the target vector."
+  },
+  {
+    "bvis_id": "BVIS-084",
+    "name": "Contiguous unit-segment count vector",
+    "domain": "Quantitative",
+    "predicate": "Counts of contiguous complete discrete units in the specified segments form the target vector."
+  },
+  {
+    "bvis_id": "BVIS-085",
+    "name": "Calibrated numeric-window value",
+    "domain": "Quantitative",
+    "predicate": "The visible numeric window represents the target numerical value under the specified calibration."
+  },
+  {
+    "bvis_id": "BVIS-086",
+    "name": "Two-pointer periodic scalar reading",
+    "domain": "Quantitative",
+    "predicate": "Two pointers with explicit roles jointly map to the target scalar on a periodic scale."
+  },
+  {
+    "bvis_id": "BVIS-087",
+    "name": "Single-pointer angular scalar reading",
+    "domain": "Quantitative",
+    "predicate": "The pointer tip maps to the target scalar on the calibrated angular scale."
+  },
+  {
+    "bvis_id": "BVIS-088",
+    "name": "Linear-scale position reading",
+    "domain": "Quantitative",
+    "predicate": "The visible state boundary maps to the target scalar on the calibrated linear scale."
+  },
+  {
+    "bvis_id": "BVIS-089",
+    "name": "Whole-and-partial icon quantity",
+    "domain": "Quantitative",
+    "predicate": "The number of whole icons and the single partial icon jointly represent the target fractional quantity."
+  },
+  {
+    "bvis_id": "BVIS-090",
+    "name": "Calibrated field-state value vector",
+    "domain": "Quantitative",
+    "predicate": "States of multiple visible fields map to the target numerical vector under an explicit calibration."
+  },
+  {
+    "bvis_id": "BVIS-091",
+    "name": "Modular height vector",
+    "domain": "Quantitative",
+    "predicate": "Unit-block counts in ordered modular towers form the target height vector."
+  },
+  {
+    "bvis_id": "BVIS-092",
+    "name": "Ordered aggregate magnitude vector",
+    "domain": "Quantitative",
+    "predicate": "Counts or calibrated quantities along the specified statistical index form the target magnitude vector."
+  },
+  {
+    "bvis_id": "BVIS-093",
+    "name": "Two-dimensional regional count matrix",
+    "domain": "Quantitative",
+    "predicate": "Instance counts in two-dimensionally ordered regions form the target count matrix."
+  },
+  {
+    "bvis_id": "BVIS-094",
+    "name": "Radial sector count vector",
+    "domain": "Quantitative",
+    "predicate": "Instance counts in radial sectors, starting from the unique angular anchor, form the target vector."
+  },
+  {
+    "bvis_id": "BVIS-095",
+    "name": "Cumulative nested-region counts",
+    "domain": "Quantitative",
+    "predicate": "Cumulative instance counts across nested regions from inside to outside form the target monotonic vector."
+  },
+  {
+    "bvis_id": "BVIS-096",
+    "name": "Spatial density gradient",
+    "domain": "Quantitative",
+    "predicate": "Instance densities in equal-area or calibrated regions increase, decrease or form extrema in the specified direction."
+  },
+  {
+    "bvis_id": "BVIS-097",
+    "name": "Regional area-coverage ratio vector",
+    "domain": "Quantitative",
+    "predicate": "Fractions of each ordered region covered by the target foreground form the target vector."
+  },
+  {
+    "bvis_id": "BVIS-098",
+    "name": "Regional count-difference vector",
+    "domain": "Quantitative",
+    "predicate": "Instance-count differences between specified region pairs form the target signed vector."
+  },
+  {
+    "bvis_id": "BVIS-099",
+    "name": "Group-size ordering",
+    "domain": "Quantitative",
+    "predicate": "Instance counts of visible groups satisfy the target total or partial order."
+  },
+  {
+    "bvis_id": "BVIS-100",
+    "name": "Spatial count-balance relationship",
+    "domain": "Quantitative",
+    "predicate": "Counts in mirrored, opposed or paired regions satisfy equality, a difference of one or the specified balance relationship."
+  },
+  {
+    "bvis_id": "BVIS-101",
+    "name": "Visible stroke-addition chain",
+    "domain": "Procedural",
+    "predicate": "Specified strokes are added at successive visible stages while existing strokes are preserved."
+  },
+  {
+    "bvis_id": "BVIS-102",
+    "name": "Visible state-transition chain",
+    "domain": "Procedural",
+    "predicate": "Adjacent visible states are connected by permitted local operations in the target order."
+  },
+  {
+    "bvis_id": "BVIS-103",
+    "name": "Anchored cyclic state process",
+    "domain": "Procedural",
+    "predicate": "Read from the unique keyed position in the specified direction, states strictly expand, reach an extremum, retract and close the cycle."
+  },
+  {
+    "bvis_id": "BVIS-104",
+    "name": "Visible motion-frame sequence",
+    "domain": "Procedural",
+    "predicate": "All visible frames express the target motion stages and trend in index order."
+  },
+  {
+    "bvis_id": "BVIS-105",
+    "name": "Directed feed event sequence",
+    "domain": "Procedural",
+    "predicate": "Event order and transitions are read along visible physical feed or stage anchors."
+  },
+  {
+    "bvis_id": "BVIS-106",
+    "name": "Visible material-layer addition record",
+    "domain": "Procedural",
+    "predicate": "Visible stages or an explicit formation axis record the addition and retention of material or layers."
+  },
+  {
+    "bvis_id": "BVIS-107",
+    "name": "Progressive regional revision",
+    "domain": "Procedural",
+    "predicate": "Successive visible impressions add or remove one registered region per step and converge."
+  },
+  {
+    "bvis_id": "BVIS-108",
+    "name": "Anchored state-transition front",
+    "domain": "Procedural",
+    "predicate": "Visible direction or stage evidence constrains a source state to become the target state through a transition front."
+  },
+  {
+    "bvis_id": "BVIS-109",
+    "name": "Valid folding transition",
+    "domain": "Procedural",
+    "predicate": "Each adjacent paper-box state can be obtained by one permitted folding operation."
+  },
+  {
+    "bvis_id": "BVIS-110",
+    "name": "Indexed local replacement",
+    "domain": "Procedural",
+    "predicate": "Each step in the ordered states replaces exactly one registered unit and preserves all other units."
+  },
+  {
+    "bvis_id": "BVIS-111",
+    "name": "Cumulative deletion",
+    "domain": "Procedural",
+    "predicate": "Each step removes only permitted existing components while preserving the remaining components."
+  },
+  {
+    "bvis_id": "BVIS-112",
+    "name": "Monotonic state growth",
+    "domain": "Procedural",
+    "predicate": "The target state never decreases along the stage axis and increases at least once."
+  },
+  {
+    "bvis_id": "BVIS-113",
+    "name": "Monotonic state decay",
+    "domain": "Procedural",
+    "predicate": "The target state never increases along the stage axis and decreases at least once."
+  },
+  {
+    "bvis_id": "BVIS-114",
+    "name": "Single-peak expansion and contraction",
+    "domain": "Procedural",
+    "predicate": "The state strictly increases to a unique extremum and then strictly decreases."
+  },
+  {
+    "bvis_id": "BVIS-115",
+    "name": "Alternating state process",
+    "domain": "Procedural",
+    "predicate": "Two or more discrete states alternate along the stage axis according to the fixed pattern."
+  },
+  {
+    "bvis_id": "BVIS-116",
+    "name": "Visible trigger propagation",
+    "domain": "Procedural",
+    "predicate": "Visible shared stages and trigger anchors constrain states to propagate sequentially through the given network."
+  },
+  {
+    "bvis_id": "BVIS-117",
+    "name": "Visible synchronous multi-unit transition",
+    "domain": "Procedural",
+    "predicate": "Multiple units undergo the specified synchronous changes at common visible stage boundaries."
+  },
+  {
+    "bvis_id": "BVIS-118",
+    "name": "Ordered multi-unit updates",
+    "domain": "Procedural",
+    "predicate": "Multiple registered units perform local transformations in the specified role order."
+  },
+  {
+    "bvis_id": "BVIS-119",
+    "name": "Visually time-anchored trajectory",
+    "domain": "Procedural",
+    "predicate": "Multiple visible temporal samples of the same object form a trajectory in the anchored direction."
+  },
+  {
+    "bvis_id": "BVIS-120",
+    "name": "Event-conditioned deformation sequence",
+    "domain": "Procedural",
+    "predicate": "The object undergoes a visible discrete deformation at the specified event stage and then recovers or enters the next state."
+  }
+]

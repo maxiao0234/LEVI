@@ -1,0 +1,9 @@
+{
+  "benchmark/bvis.json": "4ca4df34d486d002196cfb1a7dc3220e33dc95a186970c6a3cffd807966ede00",
+  "benchmark/criteria.zip": "c9dd10bb52354becaa0f9b634a1b40f8aa0204c4ba11f2b99086bd6493cdb033",
+  "benchmark/evaluation_specs.json": "528ebd7792f151b0c6b8715e63f68caab5cd96ad3a0d0a5a9e679c78c85388ca",
+  "benchmark/tasks.jsonl": "af37b3f8b89dcc1f4abf094a7eb46b677c23584c6ce1d5df67ce534b83015535",
+  "evaluation/examples/images/LEVI-1143.png": "d1271c4c455515e008f2cdf386e35538e860b8e2d7aae0149f8bb3b96222550a",
+  "evaluation/examples/images/LEVI-1169.png": "c3bd513277378cda3767de14d3ddcc56e8243817957c8b1beb6447904dd8400b",
+  "evaluation/examples/input.jsonl": "1d06a4d6ff2a3c339eb57af5418ebfb328d31e65f47210e809fa8d5158066ef7"
+}

@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+runs/
+.venv/
+.env
+.env.*
+benchmark/criteria/
+benchmark/criteria.zip
+benchmark/criteria.tmp.zip
+benchmark/assets/*
+!benchmark/assets/.gitkeep

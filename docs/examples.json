@@ -1,0 +1,776 @@
+[
+  {
+    "slug": "scoreboard-colors",
+    "domain": "Symbolic",
+    "title": "Digit shapes and segment colors",
+    "tabTitle": "Scoreboard",
+    "requirement": "Show 286 while reversing the color rule for the final digit.",
+    "evidence": "The display must read 286 in standard seven-segment shapes. In 2 and 8, horizontal segments are warm white and vertical segments are amber. In 6, reverse those colors. Unlit segments remain dark.",
+    "analysis": "Sunburst and Qwen have stored PASS outcomes. GPT Image 2 changes the lit-segment pattern; Nano Banana Pro and FLUX mix up the color assignments on individual segments. Recognizing a familiar scoreboard does not establish either the digit identity or the color binding.",
+    "prompt": "A frontal close photograph of one three-digit physical seven-segment sports scoreboard displaying 286. Use standard seven-segment digit shapes. In 2 and 8, every lit horizontal segment is warm white and every lit vertical segment is amber. In 6, the lit horizontals are amber and the lit verticals are warm white. Unlit segments are dark against the black face, with no glow. Make the digits large and segment gaps clear, and show no additional score.",
+    "reference": "assets/scoreboard-colors-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/scoreboard-colors-sunburst.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/scoreboard-colors-gpt-image-2.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/scoreboard-colors-qwen.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/scoreboard-colors-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/scoreboard-colors-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      }
+    ]
+  },
+  {
+    "slug": "leaf-emblem",
+    "domain": "Symbolic",
+    "title": "A leaf with one-sided veins",
+    "tabTitle": "Leaf emblem",
+    "requirement": "Keep exactly two side veins on the right and none on the left.",
+    "evidence": "The pale leaf is a cutout in a navy circular emblem, pointing up-right. Its navy main vein runs from the lower-left petiole and stops before the tip. Exactly two short side veins join it from the right; no side vein appears on the left.",
+    "analysis": "All five outputs have stored FAIL outcomes. They produce polished flask designs but add or distribute veins differently from the specified emblem. GPT Image 2 places one side vein on each side, while several other outputs add extra branches.",
+    "prompt": "A natural, clear product photograph with complete readable working faces and an unobstructive setting. A matte insulated flask has one large navy circular brand emblem on its broad front. A pale leaf is cut out of the navy field, pointing up-right. A navy main vein runs continuously from the lower-left petiole into the leaf but stops short of the tip. Two short diagonal side veins join the main vein on its right side, none on its left. Do not fill the whole leaf navy.",
+    "reference": "assets/leaf-emblem-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/leaf-emblem-sunburst.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/leaf-emblem-gpt-image-2.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/leaf-emblem-qwen.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/leaf-emblem-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/leaf-emblem-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      }
+    ]
+  },
+  {
+    "slug": "letter-polarity",
+    "domain": "Symbolic",
+    "title": "Outline and solid letters",
+    "tabTitle": "Letter styles",
+    "requirement": "Give the two adjacent Rs different stroke identities.",
+    "evidence": "Read MORROW letter by letter. The first R uses thin ivory outlines enclosing green stroke interiors; the second R is solid ivory. M, both Os and W remain solid. The word and the letter-specific fill rules must hold together.",
+    "analysis": "The same café-sign identity appears in several materials and settings. FLUX reverses the two R styles and outlines an extra O in its recorded failure. A recognizable word alone does not satisfy letter-specific stroke requirements.",
+    "prompt": "A frontal photograph of one dark-green metal coffee-shop sign reading MORROW. M, both Os and W use solid ivory letter strokes. The adjacent Rs differ: the first R is an outline letter, with thin ivory contours enclosing dark-green stroke interiors; the second R has solid ivory strokes. Keep the letters separate and similar in size, with their normal counters readable. Do not outline the whole word or fill the first R solid.",
+    "reference": "assets/letter-polarity-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/letter-polarity-sunburst.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/letter-polarity-gpt-image-2.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/letter-polarity-qwen.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/letter-polarity-nano-banana-pro.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/letter-polarity-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      }
+    ]
+  },
+  {
+    "slug": "guitar-cutaways",
+    "domain": "Geometric",
+    "title": "Asymmetric guitar cutaways",
+    "tabTitle": "Guitar",
+    "requirement": "A taller left horn must coexist with a deeper right cutaway.",
+    "evidence": "Compare two separate pairs of contour landmarks: the left horn extends higher than the right, while the right cutaway bottom lies lower than the left. Keep the lower body intact and the neck centered.",
+    "analysis": "The five recorded outputs pass while ranging from lacquered electric guitars to an unfinished wooden body. Horn height and cutaway depth are independent relations; a globally plausible guitar silhouette is not the full requirement.",
+    "prompt": "A frontal product photograph of a complete double-cutaway electric guitar body and lower neck. The upper horn on the image-left side extends clearly farther upward than the right horn. However, the right cutaway reaches deeper into the body, with its bottom clearly lower than the left cutaway bottom. Keep the lower body rounded and intact and the neck centered. Show both horn and cutaway boundaries clearly, without dimension lines or letter labels.",
+    "reference": "assets/guitar-cutaways-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/guitar-cutaways-sunburst.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/guitar-cutaways-gpt-image-2.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/guitar-cutaways-qwen.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/guitar-cutaways-nano-banana-pro.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/guitar-cutaways-flux.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      }
+    ]
+  },
+  {
+    "slug": "folding-screen",
+    "domain": "Geometric",
+    "title": "A silhouette across three panels",
+    "tabTitle": "Folding screen",
+    "requirement": "Put the folds on the slopes, not at the peaks or valley.",
+    "evidence": "Trace the physical cut top edge across all three screen panels. The left outer peak is highest, the valley lies right of center, and the right peak is next. The two hinges intersect sloping segments rather than contour vertices.",
+    "analysis": "Painted and carved screens look convincing, but all five have stored FAIL outcomes. Sunburst places the right fold at the valley instead of along the rising slope. The contour and hinge positions must work together; decorative artwork cannot replace either requirement.",
+    "prompt": "Near-frontal photograph of a shallow three-panel folding screen, all faces clear. Its actual cut top edge forms a continuous unequal M profile: left outer peak highest, central valley right of center, right outer peak next. The folds cut the descending-left and ascending-right slopes, not vertices. Bottoms level. This is the physical silhouette, not a printed M below a rectangular top.",
+    "reference": "assets/folding-screen-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/folding-screen-sunburst.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/folding-screen-gpt-image-2.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/folding-screen-qwen.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/folding-screen-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/folding-screen-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      }
+    ]
+  },
+  {
+    "slug": "boundary",
+    "domain": "Geometric",
+    "title": "Asymmetric shared boundaries",
+    "tabTitle": "Shared boundaries",
+    "requirement": "Make the two shared boundaries asymmetric in opposite directions.",
+    "evidence": "Read the shared blue/ivory boundary in each panel, including its two outer legs and single central trough. Compare the trough with the midpoint between the legs: right of center in the left panel and left of center in the right panel. Exact dimensions may differ. Extra printed strokes cannot substitute for the boundary.",
+    "analysis": "Sunburst and GPT Image 2 retain the opposing trough offsets. Qwen introduces additional cut-ins and letter-like shapes; Nano Banana Pro adds outlined M strokes; FLUX introduces line structure and an incorrect boundary profile. Similar overall impressions can hide different geometric identities.",
+    "prompt": "A frontal close photograph of two separate two-color vinyl panels on a shop window. In each panel an upper blue sheet and lower ivory sheet touch along one continuous interlocking seam, with no gap or overlap. The left seam forms a tall M-shaped profile with two vertical outer legs and one central downward V; the V trough lies distinctly to the right of the midpoint between the legs. The right panel has the same M-shaped structure with two outer legs and one central trough, but its trough lies distinctly to the left of the midpoint between the legs. Exact dimensions need not match between panels. The two panels use the same blue-above and ivory-below color assignment. The M shape is made only by the shared boundary, with no printed letter strokes.",
+    "reference": "assets/boundary-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/boundary-sunburst.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/boundary-gpt-image-2.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/boundary-qwen.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/boundary-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/boundary-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      }
+    ]
+  },
+  {
+    "slug": "wooden-links",
+    "domain": "Topological",
+    "title": "Three interlocking wooden rings",
+    "tabTitle": "Linked rings",
+    "requirement": "Trace the front and rear crossings of both neighboring pairs.",
+    "evidence": "The left and middle rings link, as do the middle and right; the outer rings do not link directly. At the front crossings, left is above middle and middle above right. Each rear crossing reverses that order, and every ring stays closed.",
+    "analysis": "The outputs produce attractive wooden trivets, yet all have stored FAIL outcomes. GPT Image 2 reverses the requested front-crossing order. Front and rear overlaps can also be visually ambiguous, so tracing each continuous arc matters more than the overall three-ring appearance.",
+    "prompt": "A slightly elevated close photograph of a three-ring wooden trivet on a tea table. Three broad oval wood rings interlock left to right; outer rings do not link directly. At the front crossing of the left pair the left ring is above the middle; at the front crossing of the right pair the middle is above the right. Each rear crossing reverses that order. All rings are closed, without hooks or cords.",
+    "reference": "assets/wooden-links-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/wooden-links-sunburst.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/wooden-links-gpt-image-2.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/wooden-links-qwen.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/wooden-links-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/wooden-links-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      }
+    ]
+  },
+  {
+    "slug": "aquarium-hoses",
+    "domain": "Topological",
+    "title": "Four hoses, four endpoints",
+    "tabTitle": "Aquarium",
+    "requirement": "Each separated outlet hose must reach exactly one airstone.",
+    "evidence": "Trace each of the four colored hoses from the shared manifold to its own visible airstone. No hose may merge, branch or end freely. Treat the manifold as one physical body, not a single geometric point.",
+    "analysis": "Sunburst, GPT Image 2, Qwen and FLUX have stored PASS outcomes despite different tank scenes. For Nano Banana Pro, the archived assessment identifies a possible additional transparent connection near the blue airstone; that local connection is visually uncertain.",
+    "prompt": "A close frontal photograph of an aquarium aeration manifold mounted above the tank rim. One inlet hose enters the left side. Four individually colored outlet hoses leave the manifold and remain separated all the way to four visible airstones at the tank bottom. Each hose reaches exactly one stone; no hoses join each other, end freely or form a branch. The manifold is one physical body, not a required single microscopic point.",
+    "reference": "assets/aquarium-hoses-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/aquarium-hoses-sunburst.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/aquarium-hoses-gpt-image-2.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/aquarium-hoses-qwen.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/aquarium-hoses-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/aquarium-hoses-flux.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      }
+    ]
+  },
+  {
+    "slug": "rope",
+    "domain": "Topological",
+    "title": "One loop, two free ends",
+    "tabTitle": "Rope loop",
+    "requirement": "One closed rope loop, two free tips, and four arms at one junction.",
+    "evidence": "Trace the closed loop, the single lower junction, and every tail to its free tip. The target has one loop, two free tips, and four arms incident at the junction. Rope texture and the shape of the loop may vary, provided they do not introduce another branch or opening.",
+    "analysis": "Sunburst, GPT Image 2 and Qwen show one loop with two tails. Nano Banana Pro produces four distinct tail tips around the knot, changing the branch structure despite a recognizable loop ornament. Trace each tail to its endpoint rather than judging the silhouette alone.",
+    "prompt": "An overhead close photograph of a simple thick-cord coaster ornament lying flat. One clearly closed rope loop joins two short loose tails at a single broad knot at its lower edge. Exactly four rope arms meet there: the two sides of the loop and the two tails. There is exactly one loop and two free tail tips, with no other branches or small woven holes.",
+    "reference": "assets/rope-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/rope-sunburst.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/rope-gpt-image-2.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/rope-qwen.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/rope-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/rope-flux.webp",
+        "verdict": "PASS",
+        "reviewFlag": true
+      }
+    ]
+  },
+  {
+    "slug": "theater-seats",
+    "domain": "Layout",
+    "title": "Reserved seats in a theater",
+    "tabTitle": "Theater",
+    "requirement": "Preserve the four-by-eight grid and its row-specific card pattern.",
+    "evidence": "Count rows from the stage and seats from the viewer left. Cards are absent at 3–4, 5–6, 2–3 and 6–7 in successive rows. Every physical seat remains present and unoccupied; only its reserve-card state changes.",
+    "analysis": "GPT Image 2 and Sunburst have stored PASS outcomes. Qwen introduces an extra row, while the other failures alter the grid or card placement. A cinematic theater scene can still lose the exact occupancy pattern.",
+    "prompt": "A slightly elevated view from the stage of a small theater with four clearly separated rows of eight identical seats. All thirty-two physical seats are present and every seat is unoccupied. Red reserve cards are attached to the seat backs. Counting rows from nearest to farthest and positions from viewer left, cards are absent only at positions 3 and 4 in the first row, 5 and 6 in the second, 2 and 3 in the third, and 6 and 7 in the fourth. All other seats carry one red card. Seat backs and all cards are plainly visible, without people or extra cards.",
+    "reference": "assets/theater-seats-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/theater-seats-sunburst.webp",
+        "verdict": "PASS",
+        "reviewFlag": true
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/theater-seats-gpt-image-2.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/theater-seats-qwen.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/theater-seats-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/theater-seats-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      }
+    ]
+  },
+  {
+    "slug": "clothesline",
+    "domain": "Layout",
+    "title": "Color and garment order",
+    "tabTitle": "Clothesline",
+    "requirement": "Bind each color to the right garment in the six-item sequence.",
+    "evidence": "From left to right: blue T-shirt, red towel, ivory trousers, blue towel, ivory T-shirt, red trousers. The six complete items must remain separate on one straight horizontal line; towels and trouser legs must stay distinguishable.",
+    "analysis": "Sunburst, GPT Image 2 and Nano Banana Pro have stored PASS outcomes. Qwen largely preserves the garment sequence but its line visibly sags, which fails a separate explicit condition in the archived assessment. Whole-task labels account for the full prompt, not just the color order.",
+    "prompt": "A frontal photograph of one straight horizontal clothesline on a balcony, with six separate hanging items and no overlaps. From left to right: blue short-sleeved T-shirt, red rectangular towel, ivory long trousers, blue rectangular towel, ivory short-sleeved T-shirt, red long trousers. Each is one complete item attached to the same line; trouser legs remain distinguishable, and towels do not resemble trousers. No scarf, socks, extra clothes or printed logos. Keep the full line of six items clearly visible.",
+    "reference": "assets/clothesline-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/clothesline-sunburst.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/clothesline-gpt-image-2.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/clothesline-qwen.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/clothesline-nano-banana-pro.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/clothesline-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      }
+    ]
+  },
+  {
+    "slug": "charger",
+    "domain": "Layout",
+    "title": "Slots and status lights",
+    "tabTitle": "Charger",
+    "requirement": "Four occupied slots in a two-by-four grid, each paired with one green light.",
+    "evidence": "Index the two rows and four columns from the viewer left. The occupied-slot sets are (1,3) and (2,3); the lit-indicator sets must match them exactly. Evidence must bind each light to its slot. Four batteries in total is insufficient if the grid, positions, or light assignments differ.",
+    "analysis": "Sunburst, GPT Image 2, and Qwen preserve the two-by-four layout and the requested occupied slots. Nano Banana Pro expands each row to six slots. FLUX.2 Max adds extra green indicators and breaks the one-light-per-slot correspondence. These errors remain visible even when the object is clearly a charger.",
+    "prompt": "A near-overhead close photograph of a real battery charger with two rows of four separate battery slots. In the top row, only the first and third slots contain batteries. In the bottom row, only the second and third slots contain batteries. Every occupied slot has exactly one green status light immediately below it; every empty slot has its status light dark. All batteries and slot floors are visible, with no extra loose batteries or additional indicators.",
+    "reference": "assets/charger-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/charger-sunburst.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/charger-gpt-image-2.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/charger-qwen.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/charger-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/charger-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      }
+    ]
+  },
+  {
+    "slug": "blueberry-tart",
+    "domain": "Quantitative",
+    "title": "Blueberries in three regions",
+    "tabTitle": "Blueberry tart",
+    "requirement": "Place 2, 3 and 4 berries inside successive cream-ring regions.",
+    "evidence": "The cream rings create a central disk and two annuli. Count berries separately in those regions: two, three and four. Berries cannot cross boundaries; their positions inside each region are free.",
+    "analysis": "All five outputs have stored FAIL outcomes. GPT Image 2 puts berries into the middle annulus while leaving the outer region empty. Matching the overall dessert appearance—or even a total count—cannot substitute for the three regional counts.",
+    "prompt": "An overhead food photograph of one round fruit tart. Two thin piped cream rings divide its top into a central disk, a middle annulus and an outer annulus. Put two whole blueberries in the central disk, three in the middle annulus and four in the outer annulus. All nine berries have similar size, remain separate and fully visible, and do not cross the cream boundaries. Positions within each region are unrestricted. The cream rings are real tart decoration, with no numbers or diagram legend.",
+    "reference": "assets/blueberry-tart-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/blueberry-tart-sunburst.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/blueberry-tart-gpt-image-2.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/blueberry-tart-qwen.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/blueberry-tart-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/blueberry-tart-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      }
+    ]
+  },
+  {
+    "slug": "beaded-necklace",
+    "domain": "Quantitative",
+    "title": "Counting by size and color",
+    "tabTitle": "Necklace",
+    "requirement": "Separate bead size, color and unwanted spacer beads.",
+    "evidence": "The necklace requires six large beads (two amber, four navy) and three small beads (two amber, one navy). Order is unrestricted. Exclude the metal clasp from bead counts, but do not ignore extra spacer beads.",
+    "analysis": "All five necklaces have stored FAIL outcomes. Sunburst shows extra large navy and small spacer beads; FLUX adds many more beads around the loop. Jewelry can remain visually polished while violating the joint size-and-color inventory.",
+    "prompt": "Overhead product photograph of one complete beaded necklace laid in a loose loop. Exactly nine round beads: six large and three small. Large beads comprise two amber and four navy; small beads comprise two amber and one navy. Keep size classes clearly distinct and beads separated, in any order. No pendant or extra spacer beads; the metal clasp is not a bead. Avoid strong reflective duplicates.",
+    "reference": "assets/beaded-necklace-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/beaded-necklace-sunburst.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/beaded-necklace-gpt-image-2.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/beaded-necklace-qwen.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/beaded-necklace-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/beaded-necklace-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      }
+    ]
+  },
+  {
+    "slug": "abacus",
+    "domain": "Quantitative",
+    "title": "Counts inside and outside a frame",
+    "tabTitle": "Abacus",
+    "requirement": "Five rods with lower counts 4, 4, 3, 4, 4, plus one loose bead outside the frame.",
+    "evidence": "Read the five upper-bead counts, the five lower-bead counts, and loose beads outside the frame separately. The targets are (1,1,1,1,1), (4,4,3,4,4), and one loose bead. Bead positions along a rod are unrestricted; moving the loose bead onto a rod changes the required regional counts.",
+    "analysis": "The first four configurations have stored PASS outcomes and preserve the five-rod structure with one loose bead below it. FLUX.2 Max shows only two lower beads on the leftmost rod instead of four. The separate bead outside the frame cannot compensate for a deficit on a particular rod.",
+    "prompt": "An overhead close photograph of one five-rod wooden abacus. Each rod has one upper bead. The lower bead counts from left to right are four, four, three, four, four. One separate matching loose bead lies below and outside the frame. Do not thread it onto the center rod or count it as part of a neighboring rod. All rods and beads are visible; no numerals or arithmetic appear.",
+    "reference": "assets/abacus-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/abacus-sunburst.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/abacus-gpt-image-2.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/abacus-qwen.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/abacus-nano-banana-pro.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/abacus-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      }
+    ]
+  },
+  {
+    "slug": "folded-paper",
+    "domain": "Procedural",
+    "title": "A fold with two visible faces",
+    "tabTitle": "Folded paper",
+    "requirement": "Move one corner while keeping the printed stripe on the correct face.",
+    "evidence": "The crease joins the midpoints of the left and bottom edges. Folding the lower-left corner exposes an ivory triangular reverse and reveals the table in the vacated corner. The white band stays on exposed blue paper, never on the ivory flap.",
+    "analysis": "Qwen has the stored PASS. The other outputs fail on fold placement, exposed area, or stripe transfer. GPT Image 2 places the crease away from the required midpoints and carries the stripe onto the reverse face.",
+    "prompt": "An overhead photograph of square craft paper on a table, blue on the front and ivory on the back. Its lower-left corner is folded inward flat along a diagonal joining the midpoint of the left edge to the midpoint of the bottom edge. The ivory reverse forms a large triangular flap on the upper-right side of that crease; the original lower-left corner area reveals the table. A broad white horizontal band on the blue front lies in the lower half of the original square. Keep that band on the exposed blue face, but do not print it on the ivory flap. The other corners are unfolded. No step panels or arrows.",
+    "reference": "assets/folded-paper-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/folded-paper-sunburst.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/folded-paper-gpt-image-2.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/folded-paper-qwen.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/folded-paper-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/folded-paper-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      }
+    ]
+  },
+  {
+    "slug": "layered-candle",
+    "domain": "Procedural",
+    "title": "A candle after partial consumption",
+    "tabTitle": "Layered candle",
+    "requirement": "Consume the top layer and half the middle layer without shrinking the base.",
+    "evidence": "Compare the two product photographs at the same scale and base level. The red top layer disappears, the ivory layer becomes half as tall, and the blue layer keeps its height. Both states are unlit and equally wide.",
+    "analysis": "All five outputs have stored FAIL outcomes. Sunburst removes the red layer but leaves the ivory layer nearly unchanged; FLUX retains red in the second state. The comparison tests a specific state change, not a generic smaller candle.",
+    "prompt": "Two large real product photographs numbered 1 and 2 on a layered-candle package use the same scale and base level. In 1 the candle has blue, ivory and red material layers bottom to top. In 2 the red layer is fully consumed, the ivory layer is half its earlier height, and the blue layer has unchanged height. Both show cooled unlit states of the same width, without smoke or flames. Do not uniformly shrink the entire candle.",
+    "reference": "assets/layered-candle-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/layered-candle-sunburst.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/layered-candle-gpt-image-2.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/layered-candle-qwen.webp",
+        "verdict": "FAIL",
+        "reviewFlag": true
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/layered-candle-nano-banana-pro.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/layered-candle-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      }
+    ]
+  },
+  {
+    "slug": "erasure",
+    "domain": "Procedural",
+    "title": "A localized deletion",
+    "tabTitle": "Erased letter",
+    "requirement": "Erase part of the upper bowl of B while preserving its stem and lower bowl.",
+    "evidence": "Read the left stem, lower bowl, and two endpoints bordering the erased upper-right arc. The stem and lower bowl must remain complete, while the erased interval exposes blank board. This is a visible intermediate state under a deletion rule; no hidden drawing or erasing history is inferred.",
+    "analysis": "Sunburst and GPT Image 2 leave an open upper-right arc while retaining the stem and lower bowl. Dark patches and chalk residue complicate the interpretation of the Qwen and Nano Banana Pro images. FLUX retains a complete B, giving a clear counterexample to the requested deletion.",
+    "prompt": "A near-frontal photograph of a chalkboard with a locally erased B. The left stem and lower bowl remain complete. A broad right-side section of the upper bowl has been erased, leaving clearly separated upper and lower stroke endpoints. The erased area is blank, not covered by white paper. Do not erase the lower bowl or stem or add a complete B alongside.",
+    "reference": "assets/erasure-reference.svg",
+    "outputs": [
+      {
+        "model": "GPT Image 2.5 Sunburst",
+        "image": "assets/erasure-sunburst.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "GPT Image 2",
+        "image": "assets/erasure-gpt-image-2.webp",
+        "verdict": "PASS",
+        "reviewFlag": false
+      },
+      {
+        "model": "Qwen Image 3 Pro",
+        "image": "assets/erasure-qwen.webp",
+        "verdict": "PASS",
+        "reviewFlag": true
+      },
+      {
+        "model": "Nano Banana Pro",
+        "image": "assets/erasure-nano-banana-pro.webp",
+        "verdict": "PASS",
+        "reviewFlag": true
+      },
+      {
+        "model": "FLUX.2 Max",
+        "image": "assets/erasure-flux.webp",
+        "verdict": "FAIL",
+        "reviewFlag": false
+      }
+    ]
+  }
+]
