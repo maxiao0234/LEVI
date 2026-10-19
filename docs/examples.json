@@ -6,7 +6,7 @@
     "tabTitle": "Scoreboard",
     "requirement": "Show 286 while reversing the color rule for the final digit.",
     "evidence": "The display must read 286 in standard seven-segment shapes. In 2 and 8, horizontal segments are warm white and vertical segments are amber. In 6, reverse those colors. Unlit segments remain dark.",
-    "analysis": "Sunburst and Qwen have stored PASS outcomes. GPT Image 2 changes the lit-segment pattern; Nano Banana Pro and FLUX mix up the color assignments on individual segments. Recognizing a familiar scoreboard does not establish either the digit identity or the color binding.",
+    "analysis": "Sunburst and Qwen receive PASS. GPT Image 2 changes the lit-segment pattern; Nano Banana Pro and FLUX mix up the color assignments on individual segments. Recognizing a familiar scoreboard does not establish either the digit identity or the color binding.",
     "prompt": "A frontal close photograph of one three-digit physical seven-segment sports scoreboard displaying 286. Use standard seven-segment digit shapes. In 2 and 8, every lit horizontal segment is warm white and every lit vertical segment is amber. In 6, the lit horizontals are amber and the lit verticals are warm white. Unlit segments are dark against the black face, with no glow. Make the digits large and segment gaps clear, and show no additional score.",
     "reference": "assets/scoreboard-colors-reference.svg",
     "outputs": [
@@ -49,7 +49,7 @@
     "tabTitle": "Leaf emblem",
     "requirement": "Keep exactly two side veins on the right and none on the left.",
     "evidence": "The pale leaf is a cutout in a navy circular emblem, pointing up-right. Its navy main vein runs from the lower-left petiole and stops before the tip. Exactly two short side veins join it from the right; no side vein appears on the left.",
-    "analysis": "All five outputs have stored FAIL outcomes. They produce polished flask designs but add or distribute veins differently from the specified emblem. GPT Image 2 places one side vein on each side, while several other outputs add extra branches.",
+    "analysis": "All five outputs receive FAIL. They produce polished flask designs but add or distribute veins differently from the specified emblem. GPT Image 2 places one side vein on each side, while several other outputs add extra branches.",
     "prompt": "A natural, clear product photograph with complete readable working faces and an unobstructive setting. A matte insulated flask has one large navy circular brand emblem on its broad front. A pale leaf is cut out of the navy field, pointing up-right. A navy main vein runs continuously from the lower-left petiole into the leaf but stops short of the tip. Two short diagonal side veins join the main vein on its right side, none on its left. Do not fill the whole leaf navy.",
     "reference": "assets/leaf-emblem-reference.svg",
     "outputs": [
@@ -178,7 +178,7 @@
     "tabTitle": "Folding screen",
     "requirement": "Put the folds on the slopes, not at the peaks or valley.",
     "evidence": "Trace the physical cut top edge across all three screen panels. The left outer peak is highest, the valley lies right of center, and the right peak is next. The two hinges intersect sloping segments rather than contour vertices.",
-    "analysis": "Painted and carved screens look convincing, but all five have stored FAIL outcomes. Sunburst places the right fold at the valley instead of along the rising slope. The contour and hinge positions must work together; decorative artwork cannot replace either requirement.",
+    "analysis": "Painted and carved screens look convincing, but all five receive FAIL. Sunburst places the right fold at the valley instead of along the rising slope. The contour and hinge positions must work together; decorative artwork cannot replace either requirement.",
     "prompt": "Near-frontal photograph of a shallow three-panel folding screen, all faces clear. Its actual cut top edge forms a continuous unequal M profile: left outer peak highest, central valley right of center, right outer peak next. The folds cut the descending-left and ascending-right slopes, not vertices. Bottoms level. This is the physical silhouette, not a printed M below a rectangular top.",
     "reference": "assets/folding-screen-reference.svg",
     "outputs": [
@@ -264,7 +264,7 @@
     "tabTitle": "Linked rings",
     "requirement": "Trace the front and rear crossings of both neighboring pairs.",
     "evidence": "The left and middle rings link, as do the middle and right; the outer rings do not link directly. At the front crossings, left is above middle and middle above right. Each rear crossing reverses that order, and every ring stays closed.",
-    "analysis": "The outputs produce attractive wooden trivets, yet all have stored FAIL outcomes. GPT Image 2 reverses the requested front-crossing order. Front and rear overlaps can also be visually ambiguous, so tracing each continuous arc matters more than the overall three-ring appearance.",
+    "analysis": "The outputs produce attractive wooden trivets, yet all receive FAIL. GPT Image 2 reverses the requested front-crossing order. Front and rear overlaps can also be visually ambiguous, so tracing each continuous arc matters more than the overall three-ring appearance.",
     "prompt": "A slightly elevated close photograph of a three-ring wooden trivet on a tea table. Three broad oval wood rings interlock left to right; outer rings do not link directly. At the front crossing of the left pair the left ring is above the middle; at the front crossing of the right pair the middle is above the right. Each rear crossing reverses that order. All rings are closed, without hooks or cords.",
     "reference": "assets/wooden-links-reference.svg",
     "outputs": [
@@ -307,7 +307,7 @@
     "tabTitle": "Aquarium",
     "requirement": "Each separated outlet hose must reach exactly one airstone.",
     "evidence": "Trace each of the four colored hoses from the shared manifold to its own visible airstone. No hose may merge, branch or end freely. Treat the manifold as one physical body, not a single geometric point.",
-    "analysis": "Sunburst, GPT Image 2, Qwen and FLUX have stored PASS outcomes despite different tank scenes. For Nano Banana Pro, the archived assessment identifies a possible additional transparent connection near the blue airstone; that local connection is visually uncertain.",
+    "analysis": "Sunburst, GPT Image 2, Qwen and FLUX receive PASS despite different tank scenes. For Nano Banana Pro, the automatic assessment identifies a possible additional transparent connection near the blue airstone; that local connection is visually uncertain.",
     "prompt": "A close frontal photograph of an aquarium aeration manifold mounted above the tank rim. One inlet hose enters the left side. Four individually colored outlet hoses leave the manifold and remain separated all the way to four visible airstones at the tank bottom. Each hose reaches exactly one stone; no hoses join each other, end freely or form a branch. The manifold is one physical body, not a required single microscopic point.",
     "reference": "assets/aquarium-hoses-reference.svg",
     "outputs": [
@@ -393,7 +393,7 @@
     "tabTitle": "Theater",
     "requirement": "Preserve the four-by-eight grid and its row-specific card pattern.",
     "evidence": "Count rows from the stage and seats from the viewer left. Cards are absent at 3–4, 5–6, 2–3 and 6–7 in successive rows. Every physical seat remains present and unoccupied; only its reserve-card state changes.",
-    "analysis": "GPT Image 2 and Sunburst have stored PASS outcomes. Qwen introduces an extra row, while the other failures alter the grid or card placement. A cinematic theater scene can still lose the exact occupancy pattern.",
+    "analysis": "GPT Image 2 and Sunburst receive PASS. Qwen introduces an extra row, while the other failures alter the grid or card placement. A cinematic theater scene can still lose the exact occupancy pattern.",
     "prompt": "A slightly elevated view from the stage of a small theater with four clearly separated rows of eight identical seats. All thirty-two physical seats are present and every seat is unoccupied. Red reserve cards are attached to the seat backs. Counting rows from nearest to farthest and positions from viewer left, cards are absent only at positions 3 and 4 in the first row, 5 and 6 in the second, 2 and 3 in the third, and 6 and 7 in the fourth. All other seats carry one red card. Seat backs and all cards are plainly visible, without people or extra cards.",
     "reference": "assets/theater-seats-reference.svg",
     "outputs": [
@@ -436,7 +436,7 @@
     "tabTitle": "Clothesline",
     "requirement": "Bind each color to the right garment in the six-item sequence.",
     "evidence": "From left to right: blue T-shirt, red towel, ivory trousers, blue towel, ivory T-shirt, red trousers. The six complete items must remain separate on one straight horizontal line; towels and trouser legs must stay distinguishable.",
-    "analysis": "Sunburst, GPT Image 2 and Nano Banana Pro have stored PASS outcomes. Qwen largely preserves the garment sequence but its line visibly sags, which fails a separate explicit condition in the archived assessment. Whole-task labels account for the full prompt, not just the color order.",
+    "analysis": "Sunburst, GPT Image 2 and Nano Banana Pro receive PASS. Qwen largely preserves the garment sequence but its line visibly sags, which fails a separate explicit condition in the automatic assessment. Whole-task labels account for the full prompt, not just the color order.",
     "prompt": "A frontal photograph of one straight horizontal clothesline on a balcony, with six separate hanging items and no overlaps. From left to right: blue short-sleeved T-shirt, red rectangular towel, ivory long trousers, blue rectangular towel, ivory short-sleeved T-shirt, red long trousers. Each is one complete item attached to the same line; trouser legs remain distinguishable, and towels do not resemble trousers. No scarf, socks, extra clothes or printed logos. Keep the full line of six items clearly visible.",
     "reference": "assets/clothesline-reference.svg",
     "outputs": [
@@ -522,7 +522,7 @@
     "tabTitle": "Blueberry tart",
     "requirement": "Place 2, 3 and 4 berries inside successive cream-ring regions.",
     "evidence": "The cream rings create a central disk and two annuli. Count berries separately in those regions: two, three and four. Berries cannot cross boundaries; their positions inside each region are free.",
-    "analysis": "All five outputs have stored FAIL outcomes. GPT Image 2 puts berries into the middle annulus while leaving the outer region empty. Matching the overall dessert appearance—or even a total count—cannot substitute for the three regional counts.",
+    "analysis": "All five outputs receive FAIL. GPT Image 2 puts berries into the middle annulus while leaving the outer region empty. Matching the overall dessert appearance—or even a total count—cannot substitute for the three regional counts.",
     "prompt": "An overhead food photograph of one round fruit tart. Two thin piped cream rings divide its top into a central disk, a middle annulus and an outer annulus. Put two whole blueberries in the central disk, three in the middle annulus and four in the outer annulus. All nine berries have similar size, remain separate and fully visible, and do not cross the cream boundaries. Positions within each region are unrestricted. The cream rings are real tart decoration, with no numbers or diagram legend.",
     "reference": "assets/blueberry-tart-reference.svg",
     "outputs": [
@@ -565,7 +565,7 @@
     "tabTitle": "Necklace",
     "requirement": "Separate bead size, color and unwanted spacer beads.",
     "evidence": "The necklace requires six large beads (two amber, four navy) and three small beads (two amber, one navy). Order is unrestricted. Exclude the metal clasp from bead counts, but do not ignore extra spacer beads.",
-    "analysis": "All five necklaces have stored FAIL outcomes. Sunburst shows extra large navy and small spacer beads; FLUX adds many more beads around the loop. Jewelry can remain visually polished while violating the joint size-and-color inventory.",
+    "analysis": "All five necklaces receive FAIL. Sunburst shows extra large navy and small spacer beads; FLUX adds many more beads around the loop. Jewelry can remain visually polished while violating the joint size-and-color inventory.",
     "prompt": "Overhead product photograph of one complete beaded necklace laid in a loose loop. Exactly nine round beads: six large and three small. Large beads comprise two amber and four navy; small beads comprise two amber and one navy. Keep size classes clearly distinct and beads separated, in any order. No pendant or extra spacer beads; the metal clasp is not a bead. Avoid strong reflective duplicates.",
     "reference": "assets/beaded-necklace-reference.svg",
     "outputs": [
@@ -608,7 +608,7 @@
     "tabTitle": "Abacus",
     "requirement": "Five rods with lower counts 4, 4, 3, 4, 4, plus one loose bead outside the frame.",
     "evidence": "Read the five upper-bead counts, the five lower-bead counts, and loose beads outside the frame separately. The targets are (1,1,1,1,1), (4,4,3,4,4), and one loose bead. Bead positions along a rod are unrestricted; moving the loose bead onto a rod changes the required regional counts.",
-    "analysis": "The first four configurations have stored PASS outcomes and preserve the five-rod structure with one loose bead below it. FLUX.2 Max shows only two lower beads on the leftmost rod instead of four. The separate bead outside the frame cannot compensate for a deficit on a particular rod.",
+    "analysis": "The first four configurations receive PASS and preserve the five-rod structure with one loose bead below it. FLUX.2 Max shows only two lower beads on the leftmost rod instead of four. The separate bead outside the frame cannot compensate for a deficit on a particular rod.",
     "prompt": "An overhead close photograph of one five-rod wooden abacus. Each rod has one upper bead. The lower bead counts from left to right are four, four, three, four, four. One separate matching loose bead lies below and outside the frame. Do not thread it onto the center rod or count it as part of a neighboring rod. All rods and beads are visible; no numerals or arithmetic appear.",
     "reference": "assets/abacus-reference.svg",
     "outputs": [
@@ -651,7 +651,7 @@
     "tabTitle": "Folded paper",
     "requirement": "Move one corner while keeping the printed stripe on the correct face.",
     "evidence": "The crease joins the midpoints of the left and bottom edges. Folding the lower-left corner exposes an ivory triangular reverse and reveals the table in the vacated corner. The white band stays on exposed blue paper, never on the ivory flap.",
-    "analysis": "Qwen has the stored PASS. The other outputs fail on fold placement, exposed area, or stripe transfer. GPT Image 2 places the crease away from the required midpoints and carries the stripe onto the reverse face.",
+    "analysis": "Qwen receives PASS. The other outputs fail on fold placement, exposed area, or stripe transfer. GPT Image 2 places the crease away from the required midpoints and carries the stripe onto the reverse face.",
     "prompt": "An overhead photograph of square craft paper on a table, blue on the front and ivory on the back. Its lower-left corner is folded inward flat along a diagonal joining the midpoint of the left edge to the midpoint of the bottom edge. The ivory reverse forms a large triangular flap on the upper-right side of that crease; the original lower-left corner area reveals the table. A broad white horizontal band on the blue front lies in the lower half of the original square. Keep that band on the exposed blue face, but do not print it on the ivory flap. The other corners are unfolded. No step panels or arrows.",
     "reference": "assets/folded-paper-reference.svg",
     "outputs": [
@@ -694,7 +694,7 @@
     "tabTitle": "Layered candle",
     "requirement": "Consume the top layer and half the middle layer without shrinking the base.",
     "evidence": "Compare the two product photographs at the same scale and base level. The red top layer disappears, the ivory layer becomes half as tall, and the blue layer keeps its height. Both states are unlit and equally wide.",
-    "analysis": "All five outputs have stored FAIL outcomes. Sunburst removes the red layer but leaves the ivory layer nearly unchanged; FLUX retains red in the second state. The comparison tests a specific state change, not a generic smaller candle.",
+    "analysis": "All five outputs receive FAIL. Sunburst removes the red layer but leaves the ivory layer nearly unchanged; FLUX retains red in the second state. The comparison tests a specific state change, not a generic smaller candle.",
     "prompt": "Two large real product photographs numbered 1 and 2 on a layered-candle package use the same scale and base level. In 1 the candle has blue, ivory and red material layers bottom to top. In 2 the red layer is fully consumed, the ivory layer is half its earlier height, and the blue layer has unchanged height. Both show cooled unlit states of the same width, without smoke or flames. Do not uniformly shrink the entire candle.",
     "reference": "assets/layered-candle-reference.svg",
     "outputs": [

@@ -22,7 +22,7 @@ python3 -m evaluation.evaluate \
   --request-only --output runs/example
 ```
 
-This writes English evaluation requests without an API key or model call. It does not produce judgments or scores. Use a new output directory for each run.
+This prepares evaluation requests without an API key or model call. Use a new output directory for each run.
 
 ### Bundled examples
 
@@ -33,7 +33,7 @@ This writes English evaluation requests without an API key or model call. It doe
 
 `examples/input.jsonl` links task IDs, image paths and hashes. `examples/images/` contains two original 1024 × 1024 GPT Image 2 PNGs. No saved model responses are bundled.
 
-The images demonstrate request preparation and are not presented as gold-standard correct images. Regression tests create explicitly labeled synthetic English responses in temporary directories; these are test data, not judgments of the example images.
+The images demonstrate request preparation and are not presented as gold-standard correct images. Tests use synthetic responses to check the evaluation logic.
 
 ## Evaluate your images
 
@@ -47,7 +47,7 @@ An optional `image_sha256` field checks image integrity. Inputs must be original
 
 Use `--request-only` as in the offline example to inspect requests without sending them.
 
-Each request contains the task's English instructions, one image and the structured response schema. Reference SVGs, stored outcomes and human reviews are not provided to the judge.
+Each request contains the task's instructions, one image and the structured response schema. Reference SVGs, stored outcomes and human reviews are not provided to the judge.
 
 For a live run, set `LEVI_JUDGE_API_KEY` and `LEVI_JUDGE_ENDPOINT` in your environment. The endpoint must be a full HTTPS Chat Completions URL supporting the requested model and JSON schema:
 

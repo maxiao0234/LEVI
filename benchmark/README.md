@@ -15,8 +15,8 @@ The benchmark contains **1,375 text-to-image tasks** spanning **120 base visual 
 
 | File or directory | Contents |
 |---|---|
-| [tasks.jsonl](tasks.jsonl) | English generation prompts, task IDs, domain and BVIS memberships, and prompt hashes |
-| [bvis.json](bvis.json) | English BVIS names, identity definitions and domains |
+| [tasks.jsonl](tasks.jsonl) | Generation prompts, task IDs, domain and BVIS memberships, and prompt hashes |
+| [bvis.json](bvis.json) | BVIS names, identity definitions and domains |
 | [evaluation_specs.json](evaluation_specs.json) | Per-task instruction/schema paths, check IDs, exclusions and hashes |
 | `criteria.zip` | Evaluation instructions and schemas; download separately |
 | [checksums.json](checksums.json) | Integrity hashes for the data, complete ZIP and evaluation examples |
@@ -41,7 +41,7 @@ Tasks use **`LEVI-0001`–`LEVI-1375`**; BVIS entries use **`BVIS-001`–`BVIS-1
 
 A task contains `qid`, `domains`, `bvis`, `prompt_en` and `prompt_sha256`. A BVIS entry contains `bvis_id`, `name`, `predicate` and `domain`. `predicate` describes the defining identity condition. IDs do not encode difficulty or a train/test split.
 
-Generate images with **`prompt_en`**. The original English prompts and their hashes are preserved. Historical requests could add an explicit resolution instruction or adjust whitespace; the full generation-request archive is not included. No reference SVG or ground-truth construction was supplied to generators.
+Generate images with **`prompt_en`**. Use text-only input; reference SVGs and ground-truth constructions are not generator inputs.
 
 ## Evaluation criteria
 
@@ -59,7 +59,7 @@ criteria/
 
 The evaluation runner reads the archive directly; no extraction is required. Paths such as `benchmark/criteria/<qid>/judge.txt` in `evaluation_specs.json` identify archive members.
 
-The instructions use English translations of the source criteria. Task conditions, check IDs, schemas and exclusions are preserved. The paper reports the recorded automatic outcomes; translating or clarifying instruction wording does not constitute a new evaluation.
+The package defines the task criteria used by the evaluation runner. Reported paper scores come from the study’s evaluation runs; running the evaluator does not reproduce those outcomes exactly.
 
 `R00`, `R01`, etc. identify checks within a task. `C01` and `P01`, where present, identify conditions and predicate groups within that same task. They are not additional tasks or BVIS entries.
 
@@ -67,7 +67,7 @@ The instructions use English translations of the source criteria. Task condition
 
 The tasks were selected from a 1,600-task authoring inventory. Curation considered redundancy, semantic ambiguity, domain balance and observed ease after generation. The dataset is not an independent held-out random sample and has no train/test split.
 
-The recorded judge is GPT-6-Sol with medium reasoning effort. Whole-task PASS requires every included check to be satisfied. Excluded checks do not affect the decision. Review flags are retained separately; runtime or response-format errors are not visual FAIL judgments. Independent human agreement has not been measured. New model calls produce new evaluations, not an exact reproduction of the paper's outcomes.
+The recorded judge is GPT-6-Sol with medium reasoning effort. Whole-task PASS requires every included check to be satisfied. Excluded checks do not affect the decision. Review flags are retained separately; runtime or response-format errors are not visual FAIL judgments. Independent human agreement has not been measured.
 
 Reported pass rates use the full task denominator for the relevant subset; generation failures receive zero credit. Domain scores include all tasks containing the domain. BVIS-balanced scores average whole-task success among tasks containing each BVIS, then weight represented BVIS equally within a domain. They do not measure isolated component accuracy.
 

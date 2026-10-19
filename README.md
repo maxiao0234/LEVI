@@ -13,8 +13,8 @@
 </p>
 
 <p align="center">
-  <a href="docs/assets/levi-paper.pdf"><img src="docs/assets/links/paper.svg" alt="Paper PDF" height="20"></a>
-  <a href="benchmark/README.md"><img src="docs/assets/links/dataset.svg" alt="Dataset" height="20"></a>
+  <a href="docs/assets/levi-paper.pdf"><img src="docs/assets/links/paper.svg" alt="Paper: arXiv" height="20"></a>
+  <a href="benchmark/README.md"><img src="docs/assets/links/dataset.svg" alt="Benchmark: Tasks" height="20"></a>
   <a href="https://github.com/maxiao0234/LEVI"><img src="docs/assets/links/evaluation.svg" alt="Code on GitHub" height="20"></a>
   <a href="#results"><img src="docs/assets/links/results.svg" alt="Results" height="20"></a>
 </p>
@@ -62,7 +62,7 @@ Tasks cover both individual identity requirements and compositions across domain
 | **Quantitative** | counts, readings, and distributions |
 | **Procedural** | sequences, transformations, and intermediate states |
 
-The dataset includes English generation prompts, a BVIS catalogue, and task-specific evaluation criteria. Evaluation criteria and vector assets will be distributed through Hugging Face; download links are forthcoming. Start with the [dataset guide](benchmark/README.md), or inspect the [task prompts](benchmark/tasks.jsonl) and [BVIS catalogue](benchmark/bvis.json). The dataset guide also describes construction, scope and evaluation limitations.
+The benchmark includes generation prompts, a BVIS catalogue, and task-specific evaluation criteria. Evaluation criteria and vector assets will be distributed through Hugging Face; download links are forthcoming. Start with the [dataset guide](benchmark/README.md), or inspect the [task prompts](benchmark/tasks.jsonl) and [BVIS catalogue](benchmark/bvis.json). The dataset guide also describes construction, scope and evaluation limitations.
 
 ## Results
 
@@ -130,7 +130,7 @@ python3 -m evaluation.evaluate \
   --request-only --output runs/example
 ```
 
-This writes the English judge requests without invoking a model or producing scores. To evaluate your own generated images, follow the [evaluation guide](evaluation/README.md) for input manifests, request preparation, and live execution. The [example guide](evaluation/README.md#bundled-examples) explains the supplied inputs.
+This prepares evaluation requests without calling a model. To evaluate your own generated images, follow the [evaluation guide](evaluation/README.md) for input manifests, request preparation, and live execution. The [example guide](evaluation/README.md#bundled-examples) explains the supplied inputs.
 
 See [LICENSE](LICENSE) for manuscript, code and data licensing information.
 
