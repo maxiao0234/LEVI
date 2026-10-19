@@ -132,13 +132,7 @@ python3 -m evaluation.evaluate \
 
 This writes the English judge requests without invoking a model or producing scores. To evaluate your own generated images, follow the [evaluation guide](evaluation/README.md) for input manifests, request preparation, and live execution. The [example guide](evaluation/README.md#bundled-examples) explains the supplied inputs.
 
-### Preview the project website locally
-
-```sh
-python3 -m http.server 8766 --bind 127.0.0.1 --directory docs
-```
-
-Open `http://127.0.0.1:8766/`. The intended project address remains `https://maxiao0234.github.io/LEVI/`; the site has not been deployed. See [LICENSE](LICENSE) for the manuscript, code and data licensing status.
+See [LICENSE](LICENSE) for manuscript, code and data licensing information.
 
 ## Citation
 
