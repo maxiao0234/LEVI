@@ -7,7 +7,7 @@
   <a href="mailto:mx@molardata.com">Xiao Ma</a><sup>1</sup> &nbsp;·&nbsp;
   <a href="mailto:z.zhan@imperial.ac.uk">Zhonghao Zhan</a><sup>2</sup> &nbsp;·&nbsp;
   <a href="mailto:h.haddadi@imperial.ac.uk">Hamed Haddadi</a><sup>2</sup> &nbsp;·&nbsp;
-  <a href="mailto:chenqi@molardata.com">Qi Chen</a><sup>1</sup>
+  <a href="mailto:chenqi@molardata.com">Qi Chen</a><sup>1,*</sup>
   <br>
   <sup>1</sup> ZODA &nbsp;&nbsp; <sup>2</sup> Imperial College London
 </p>
