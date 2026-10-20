@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/assets/levi-paper.pdf"><img src="docs/assets/links/paper.svg" alt="Paper: arXiv" height="20"></a>
+  <a href="https://arxiv.org/abs/2610.25716"><img src="docs/assets/links/paper.svg" alt="Paper: arXiv" height="20"></a>
   <a href="benchmark/README.md"><img src="docs/assets/links/dataset.svg" alt="Benchmark: Tasks" height="20"></a>
   <a href="https://github.com/maxiao0234/LEVI"><img src="docs/assets/links/evaluation.svg" alt="Code on GitHub" height="20"></a>
   <a href="#results"><img src="docs/assets/links/results.svg" alt="Results" height="20"></a>
@@ -136,4 +136,14 @@ See [LICENSE](LICENSE) for manuscript, code and data licensing information.
 
 ## Citation
 
-> Citation information will be added here.
+```bibtex
+@misc{ma2026levi,
+  title         = {{LEVI}: Benchmarking Visual Identity Fidelity with Verifiable Low-Entropy Constructs},
+  author        = {Xiao Ma and Zhonghao Zhan and Hamed Haddadi and Qi Chen},
+  year          = {2026},
+  eprint        = {2610.25716},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2610.25716}
+}
+```
